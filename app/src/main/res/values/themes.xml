@@ -2,8 +2,15 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Pokemon_Selector" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">#073b4c</item>
     </style>
 
-    <style name="Theme.Pokemon_Selector" parent="Base.Theme.Pokemon_Selector" />
+    <style name="Theme.Pokemon_Selector" parent="Base.Theme.Pokemon_Selector" >
+        <item name="android:fontFamily">@font/audiowide</item>
+    </style>
+    
+    <style name="PokeInfo.Appearance" parent="Base.Theme.Pokemon_Selector">
+        <item name="android:textSize">25dp</item>
+        <item name="android:textColor">#073b4c</item>
+    </style>
 </resources>

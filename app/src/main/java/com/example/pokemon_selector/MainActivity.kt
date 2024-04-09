@@ -33,7 +33,7 @@ var selectedPoke = Pokemon()
 class MainActivity : AppCompatActivity() {
     private lateinit var  pokeList : MutableList<Pokemon>
     private lateinit var  rvPoke : RecyclerView
-    private lateinit var adapter: PokeAdapter
+    private lateinit var  adapter: PokeAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -100,8 +100,8 @@ class MainActivity : AppCompatActivity() {
             ) {
                 Log.d("Pokemon Error", errorResponse)
 
-                val toast = Toast.makeText(this@MainActivity, "Invalid Pokemon", Toast.LENGTH_SHORT) // in Activity
-                toast.show()
+                //val toast = Toast.makeText(this@MainActivity, "Invalid Pokemon", Toast.LENGTH_SHORT) // in Activity
+                //toast.show()
             }
         }]
     }
